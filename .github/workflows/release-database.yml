@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with: 
-          repository: 'ranzonsan/CreateBangumiDatabase'
+          repository: 'ranzonsan/bangumi-archive-tool'
       
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
@@ -31,8 +31,8 @@ jobs:
       
       - name: Run compiled executable
         run: |
-          chmod +x ./CreateBangumiDatabase/bin/Release/net8.0/CreateBangumiDatabase
-          ./CreateBangumiDatabase/bin/Release/net8.0/CreateBangumiDatabase
+          chmod +x ./bangumi-archive-tool/bin/Release/net8.0/CreateBangumiDatabase
+          ./bangumi-archive-tool/bin/Release/net8.0/CreateBangumiDatabase
           
       - name: Archive output
         run: |
