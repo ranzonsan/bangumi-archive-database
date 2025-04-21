@@ -37,7 +37,7 @@ jobs:
       - name: Archive output
         run: |
           mkdir Release
-          zip -r Release/BangumiArchive.zip /home/runner/work/CreateBangumiDatabase/CreateBangumiDatabase/BangumiArchive.db
+          zip -r Release/BangumiArchive.zip /home/runner/work/bangumi-archive-database/bangumi-archive-database/BangumiArchive.db
           
       - name: Fetch JSON and extract release name
         id: fetch_json
